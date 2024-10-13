@@ -1,0 +1,179 @@
+body {
+    width: 99%;
+    height: 100%;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    color: red;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: gray;
+    color: red;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+.fa-phone {
+    color: white;
+    margin-right: 40px;
+}
+
+.fa-brands {
+    color: white;
+    margin-right: 40px;
+}
+
+button:hover {
+    background-color: black;
+    color: gray;
+    border: 5px solid gray;
+}
+
+.chiziq {
+    width: 4px;
+    height: 35px;
+    position: absolute;
+    margin-left: 32px;
+    border: 1px solid blue;
+    background-color: blue;
+}
+
+.chiziq1 {
+    border: 1px solid blue;
+    background-color: blue;
+    width: 4px;
+    height: 35px;
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 36px;
+}
+
+.name {
+    color: red;
+    font-size: 25px;
+    width: 30px;
+    margin-left: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+.name1 {
+    color: blue;
+    font-family: 'Lobster', cursive;
+
+}
+
+nav {
+    ul {
+        display: flex;
+        margin-left: 150px;
+        margin-top: -50px;
+
+        li {
+            list-style-type: none;
+            margin-left: 120px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+                font-size: 20px;
+                font-family: 'Lobster', cursive;
+                position: relative;
+                z-index: 1;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    height: 4px;
+                    width: 100%;
+                    background-color: white;
+                    transform: scaleX(0);
+                    transition: transform 1s;
+                    z-index: -1;
+                }
+
+
+                &:hover {
+                    color: red;
+                    transition: 1s ease-in-out;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+
+
+
+            }
+        }
+    }
+
+    .sign_in {
+        border-radius: 20px;
+        position: absolute;
+        z-index: 1;
+        margin-left: 1320px;
+        margin-top: -45px;
+        height: 30px;
+        background-color: green;
+        color: rgb(250, 250, 4);
+        border: none;
+        width: 60px;
+        font-family: 'Lobster', cursive;
+        font-size: 16px;
+
+        /* &:hover{
+            background-color: rgb(250, 250, 4);
+            color: green;
+        } */
+    }
+
+    .sign_up {
+        border-radius: 20px;
+        width: 200px;
+        text-align: end;
+        position: absolute;
+        margin-left: 1320px;
+        margin-top: -45px;
+        height: 30px;
+        background-color: rgb(55, 52, 52);
+        color: rgb(247, 5, 5);
+        border: none;
+        font-family: 'Lobster', cursive;
+        font-size: 16px;
+        /* &:hover{
+            background-color: rgb(247, 5, 5);
+            color:rgb(55, 52, 52) ;
+        } */
+    }
+}
+
+    .fade-in {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 2s, ease, transform, 2s ease;
+
+        /* &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        } */
+    }
+
+    .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }

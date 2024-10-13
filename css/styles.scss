@@ -1,0 +1,220 @@
+    body {
+        width: 99%;
+        height: 100%;
+            background-color: black;
+    }
+.section{
+    color: white;
+}
+    .fade-in {
+        opacity: 0;
+        transform: translateY(1000px);
+        transition: opacity 2s, ease, transform, 2s ease;
+
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .js {
+        color: red;
+    }
+
+    .chiziq {
+        width: 4px;
+        height: 35px;
+        position: absolute;
+        margin-left: 32px;
+        border: 1px solid blue;
+        background-color: blue;
+    }
+
+    .chiziq1 {
+        border: 1px solid blue;
+        background-color: blue;
+        width: 4px;
+        height: 35px;
+        position: absolute;
+        margin-left: 32px;
+        margin-top: 36px;
+    }
+
+    .name {
+        color: red;
+        font-size: 25px;
+        width: 30px;
+        margin-left: 40px;
+        font-family: 'Lobster', cursive;
+        // text-decoration: overline;
+    }
+
+    .name1 {
+        color: blue;
+        font-family: 'Lobster', cursive;
+        // text-decoration: overline;
+
+    }
+
+    nav {
+        ul {
+            display: flex;
+            margin-left: 150px;
+            margin-top: -50px;
+
+            li {
+                list-style-type: none;
+                margin-left: 120px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bolder;
+                    font-size: 20px;
+                    font-family: 'Lobster', cursive;
+                    position: relative;
+                    z-index: 1;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        height: 4px;
+                        width: 100%;
+                        background-color: white;
+                        transform: scaleX(0);
+                        transition: transform 1s;
+                        z-index: -1;
+                    }
+
+
+                    &:hover {
+                        color: red;
+                        transition: 1s ease-in-out;
+                    }
+
+                    &:hover::after {
+                        transform: scaleX(1);
+                    }
+
+
+
+                }
+            }
+        }
+
+        .sign_in {
+            border-radius: 20px;
+            position: absolute;
+            z-index: 1;
+            margin-left: 1343px;
+            margin-top: -45px;
+            height: 30px;
+            background-color: green;
+            color: rgb(250, 250, 4);
+            border: none;
+            width: 60px;
+            font-family: 'Lobster', cursive;
+
+            &:hover{
+                background-color: rgb(250, 250, 4);
+                color: green;
+            }
+        }
+
+        .sign_up {
+            border-radius: 20px;
+            width: 178px;
+            text-align: end;
+            position: absolute;
+            margin-left: 1343px;
+            margin-top: -45px;
+            height: 30px;
+            background-color: rgb(55, 52, 52);
+            color: rgb(247, 5, 5);
+            border: none;
+            // font-family: 'Rockwell', serif;
+            font-family: 'Lobster', cursive;
+            &:hover{
+                background-color: rgb(247, 5, 5);
+                color:rgb(55, 52, 52) ;
+            }
+        }
+    }
+
+    .chiziq2 {
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        background-color: yellow;
+        top: 120px;
+    }
+
+    .tanish {
+        font-family: 'Lobster', cursive;
+        color: gray;
+        width: 1240px;
+        font-size: 60px;
+        margin-top: 140px;
+        margin-left: 100px;
+    }
+
+    .ism {
+        color: green;
+        font-family: 'Rockwell', serif;
+        font-weight: bolder;
+    }
+
+    .ism1 {
+        color: greenyellow;
+        font-family: 'Rockwell', serif;
+        font-weight: bolder;
+    }
+
+    .tarif {
+        width: 915px;
+        height: 225px;
+        overflow: hidden;
+        margin-left: 100px;
+        color: gray;
+        background-color: black;
+        border-radius: 10px;
+        font-family: 'Rockwell', serif;
+        margin-top: -60px;
+        // &:hover{
+        //     color: greenyellow;
+        //     background-color: red;
+        // }
+    }
+
+    .tel {
+        margin-left: 100px;
+        position: absolute;
+        border-radius: 10px;
+        background-color: gray;
+        color: red;
+        border: none;
+        width: 915px;
+        height: 70px;
+        font-size: 30px;
+        font-weight: bolder;
+        font-family: 'Rockwell', serif;
+
+    }
+
+    .hakker {
+        position: absolute;
+        margin-left: 1020px;
+        width: 500px;
+        height: 400px;
+        margin-top: -380px;
+        border-radius: 100%;
+        border: 3px solid gray;
+    }
+    .no-select {
+        -webkit-user-select: none; // Safari
+        -moz-user-select: none;    // Firefox
+        -ms-user-select: none;     // Internet Explorer/Edge
+        user-select: none;         // Non-prefixed version
+    }
